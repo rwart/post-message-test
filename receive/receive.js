@@ -10,4 +10,5 @@ window.addEventListener('message', function(event) {
     console.log(event);
     parent = event.source;
     document.querySelector('#textOutput').value = event.data;
+    document.querySelector('#objectOutput').value = JSON.stringify(event.data);
 }, false);
